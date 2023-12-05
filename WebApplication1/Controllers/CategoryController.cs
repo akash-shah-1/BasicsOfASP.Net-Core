@@ -35,6 +35,29 @@ namespace WebApplication1.Controllers
             return View();
             
         }
+        public IActionResult Edit(int? id)
+        {
+            if(id == null || id == 0) { return NotFound(); }
+            Catergory? CategoryFromDB = _db.Categories.Find(id); //This method is used only to get ID
+           // Catergory? CategoryFromDB2 = _db.Categories.FirstOrDefault(u => u.Id == id); //Using this method we can get more fields like name
+            if(CategoryFromDB == null)
+            {
+                return NotFound();
+            }
+            return View(CategoryFromDB);
+        }
+        [HttpPost]
+        public IActionResult Edit(Catergory obj)
+        {
+           
+            if (ModelState.IsValid)
+            {
+                _db.Categories.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
 
+        }
     }
 }

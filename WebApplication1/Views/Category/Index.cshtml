@@ -27,6 +27,28 @@
                 <tr>
                     <td>@obj.Category</td>
                     <td>@obj.DisplayOrder</td>
+                    <td>
+                        @*Here as-route-id , where id name should match
+                            with the argument we are getting on 
+                            Controller 
+                        *@
+                        <div class="w-75 BTN-GROUP" role="group">
+                            <a asp-controller="Category" 
+                            asp-route-id="@obj.Id"
+                            asp-action="Edit" 
+                            class="btn btn-outline-primary mx-2">
+                                Edit
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="w-75 BTN-GROUP" role="group">
+                            <a asp-controller="Category" asp-action="Delete"
+                               class="btn btn-danger mx-2">
+                                Delete
+                            </a>
+                        </div>
+                    </td>
                 </tr>
             }
         </tbody>

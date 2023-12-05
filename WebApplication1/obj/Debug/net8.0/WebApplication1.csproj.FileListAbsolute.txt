@@ -134,3 +134,4 @@ D:\Akash Shah\DotNetCore-Projects\WebApplication1\WebApplication1\bin\Debug\net8
 D:\Akash Shah\DotNetCore-Projects\WebApplication1\WebApplication1\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Akash Shah\DotNetCore-Projects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.AssemblyReference.cache
 D:\Akash Shah\DotNetCore-Projects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.csproj.CopyComplete
+D:\Akash Shah\DotNetCore-Projects\WebApplication1\WebApplication1\obj\Debug\net8.0\WebApplication1.sourcelink.json
